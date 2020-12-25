@@ -11,4 +11,9 @@ public class Controller {
     public String getHello(@RequestParam String name) {
         return "Hello, " + name;
     }
+
+    @GetMapping("/sayGo")
+    public String getGo(@RequestParam String go) {
+        return "Hello, " + go;
+    }
 }
